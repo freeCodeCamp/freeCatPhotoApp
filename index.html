@@ -1,106 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Free Cat Photo App | freeCodeCamp.org</title>
-    <link
-      rel="icon"
-      href="https://raw.githubusercontent.com/freeCodeCamp/freeCodeCamp/master/docs/images/branding/favicon.ico"
-    />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
 
-    <style>
-        @import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap");
+<head>
+  <meta charset="UTF-8" />
+  <title>Free Cat Photo App | freeCodeCamp.org</title>
+  <link rel="icon"
+    href="https://raw.githubusercontent.com/freeCodeCamp/freeCodeCamp/master/docs/images/branding/favicon.ico" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
 
-        body {
-          font-family: "Roboto Mono", monospace;
-          color: #0a0a23;
-          font-size: 18px;
-          padding: 1em;
-          line-height: 1.4;
-          text-align: center;
-          margin-top: 5vw;
-        }
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Rubik:wght@300&display=swap');
 
-        a {
-          color: #0a0a23;
-          text-decoration: underline;
-        }
+    body {
+      font-family: 'Baloo Bhai 2', cursive;
+      color: #0a0a23;
+      font-size: 18px;
+      padding: 1em;
+      line-height: 1.4;
+      text-align: center;
+      margin-top: 5vw;
+    }
 
-        a:hover {
-          color: #f5f6f7;
-          background-color: #1b1b32;
-          cursor: pointer;
-          text-decoration: none;
-        }
+    a {
+      color: #0a0a23;
+      text-decoration: underline;
+    }
 
-        a:active {
-          box-shadow: none;
-          top: 5px;
-        }
+    a:hover {
+      color: #f5f6f7;
+      background-color: #1b1b32;
+      cursor: pointer;
+      text-decoration: none;
+    }
 
-      h1 {
-        text-align: center;
-      }
+    a:active {
+      box-shadow: none;
+      top: 5px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .photos {
+      width: 50%;
+      margin: 0 auto;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    figcaption {
+      text-align: center;
+    }
+
+    img {
+      max-width: 281px;
+      height: auto;
+    }
+
+    footer {
+      font-size: 0.75em;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 650px) {
       .photos {
-        width: 50%;
-        margin: 0 auto;
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        flex-direction: column;
       }
+    }
+  </style>
 
-      figcaption {
-        text-align: center;
-      }
+</head>
 
-      img {
-        max-width: 281px;
-        height: auto;
-      }
+<body>
+  <h1>Cat Photos</h1>
+  <div class="photos">
+    <figure>
+      <img
+        src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-cat-wearing-sunglasses-while-sitting-royalty-free-image-1571755145.jpg?crop=0.670xw:1.00xh;0.147xw,0&resize=980:*"
+        alt="A cat with a goggle" />
+      <figcaption>A cat with a goggle.</figcaption>
+    </figure>
+    <figure>
+      <img src="https://i.pinimg.com/736x/97/ae/1d/97ae1d6ed80140808211496f8d77f3d3.jpg" alt="A cute kitten." />
+      <figcaption>A cute kitten.</figcaption>
+    </figure>
+  </div>
+  <footer>
+    @ 2021 <a href="https://freeCodeCamp.org" target="_blank">freeCodeCamp.org</a>
+  </footer>
+</body>
 
-      footer {
-        font-size: 0.75em;
-        margin-top: 20px;
-      }
-
-      @media (max-width: 650px) {
-        .photos {
-          flex-direction: column;
-        }
-      }
-    </style>
-
-  </head>
-
-  <body>
-    <h1>Cat Photos</h1>
-    <div class="photos">
-      <figure>
-        <img
-          src="https://bit.ly/fcc-running-cats"
-          alt="Three kittens running towards the camera."
-        />
-        <figcaption>Three kittens running towards the camera.</figcaption>
-      </figure>
-      <figure>
-        <img
-          src="https://bit.ly/fcc-relaxing-cat"
-          alt="A cute orange cat lying on its back."
-        />
-        <figcaption>A cute orange cat lying on its back.</figcaption>
-      </figure>
-    </div>
-    <footer>
-      @ 2021 <a href="https://freeCodeCamp.org" target="_blank">freeCodeCamp.org</a>
-    </footer>
-  </body>
 </html>
